@@ -81,7 +81,7 @@ class Defendant:
 		return self.industry_field
 	# Returns number of emplpyees in the commpany if a company
 	def get_employees(self):
-		return self.emplpyees
+		return self.num_employees
 
 	# Returns whhen the company was made 
 	def get_incorportation_date(self):

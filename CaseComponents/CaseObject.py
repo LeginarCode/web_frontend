@@ -35,10 +35,6 @@ class CaseObject:
 	def get_case_info_end_date(self):
 		return self.case_info.get_end_date()
 
-	#Settlement ask info 
-	def get_case_info_end_date(self):
-		return self.case_info.get_end_date()
-
 	#judge name
 	def get_case_info_judge_name(self):
 		return self.case_info.get_judge_name()
@@ -52,12 +48,12 @@ class CaseObject:
 		return self.case_info.get_description()
 
 	#defendantt numser info 
-	def get_case_info_multiple_defendants(self):
-		return self.case_info.get_multiple_defendants()
+	def get_case_info_num_plaintiffs(self):
+		return self.case_info.num_plaintiffs()
 
 	#plaintiff number info 
-	def get_case_info_multiple_defendants(self):
-		return self.case_info.get_multiple_paintiffs()
+	def get_case_info_num_defendants(self):
+		return self.case_info.get_num_defendants()
 
 
 	def get_case_info_class_action(self):

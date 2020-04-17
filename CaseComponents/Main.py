@@ -10,6 +10,18 @@ import datetime
 #CONSTRUCTOR INFO
 #def __init__(name, description, education, race, age, location, law_firm,  job, net_worth,
 #		size, previous_lawsuits, is_corporation, industry_field, num_employees, incorportation_date):
+
+
+#while (data): 
+# populate objects and create 
+
+#
+# 
+# 
+# find websites to scrape data and pass it into these fields in a loop
+# 
+# 
+#  
 PlaintiffTest = Plaintiff("Gary", "Stout young man", "Yale Educated", "Black", 25, "New York", 
 	"Jake and Jake", "teacher", 800000, None, None, False, None, None, None)
 DefendantTest = Defendant("John", "Tall middle aged man", "Harvard Educated", "white", 35, "Chicago", 
@@ -27,4 +39,4 @@ CaseInfoTest = CaseInfo("Gary Win", 200000, 200000, True, datetime.datetime(2020
 CaseObjectTest = CaseObject(PlaintiffTest, DefendantTest, CaseInfoTest)
 
 
-#print(PlaintiffTest.get_name())
+print(PlaintiffTest.get_name())

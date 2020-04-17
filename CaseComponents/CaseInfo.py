@@ -12,7 +12,7 @@ class CaseInfo:
 		self.end_date = end_date
 		self.judge_name = judge_name
 		self.judge_description = judge_description
-		self.case_get_description = case_description
+		self.case_description = case_description
 		self.num_defendants = num_defendants
 		self.num_plaintiffs = num_plaintiffs
 		self.class_action = class_action

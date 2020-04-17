@@ -15,7 +15,7 @@ class Plaintiff:
 		self.previous_lawsuits = previous_lawsuits
 		self.is_corporation = is_corporation
 		self.industry_field = industry_field
-		self.num_employees = num_employees
+		self.employees = num_employees
 		self.incorportation_date = incorportation_date
 
 
@@ -83,7 +83,7 @@ class Plaintiff:
 		return self.industry_field
 	#Returns number of emplpyees in the commpany if a company
 	def get_employees(self):
-		return self.emplpyees
+		return self.employees
 
 	#Returns whhen the company was made 
 	def get_incorportation_date(self):
