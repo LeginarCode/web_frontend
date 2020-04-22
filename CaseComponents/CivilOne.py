@@ -1,9 +1,7 @@
 class CivilOne:
 
-
 #Data from this link -- https://www.fjc.gov/research/idb/interactive/IDB-civil-1970-1987
 #This class represents the cases from 1970 to 1987
-
 
     def __init__(self, CIRCUIT, DISTRICT, OFFICE, DOCKET, FILEDATE, JURIS, NOS, ORIGIN, RESIDENC, CLASSACT,
         TERMJUDG, FILEJUDG, DEMANDED, FILEMAG, COUNTY, CASENAME, TERMDATE, FDATEUSE, DISP, TERMMAG, PROCPROG, 

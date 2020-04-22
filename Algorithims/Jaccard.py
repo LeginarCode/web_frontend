@@ -18,5 +18,12 @@
 #In this case the similarity will be .7
 
 #This is a super simple example and this should be expanded upon but is a start
-
 #
+#
+#  
+#
+#
+#
+#
+
+
