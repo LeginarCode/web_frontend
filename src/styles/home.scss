@@ -1,0 +1,61 @@
+@import 'variables';
+
+
+// Showcase styling
+.showcase {
+    align-self: initial;
+    background-color: $primary-color;
+    .container {
+        padding: 1rem 20rem 1rem 20rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            margin: 1rem;
+            font-family: $font-stack-2;
+            font-size: 4rem;
+            font-weight: normal;
+        }
+        
+        p {
+            margin: 1rem 1rem;
+            font-size: 1.5rem;
+        }
+
+        a {
+            margin: 1rem;
+            display: inline-block;
+            text-decoration: none;
+            color: $white;
+            background-color: $black;
+            border-radius: 30px;
+            padding: 1rem 1.5rem;
+        }
+
+        a:hover {
+            background-color: #333;
+        }
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            height: 30rem;
+        }
+    }
+}
+
+.section {
+    text-align: center;
+    padding: 1em 25%;
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+.section:nth-child(even) {
+    background-color: #F0F0F0;
+}

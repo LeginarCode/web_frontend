@@ -1,0 +1,19 @@
+@import 'variables';
+
+
+
+// Apply general styling for the entire site here
+// To add styling for specific components create a scss file for that specific component
+
+html {
+    background-color: $white;
+    font-family: $font-stack;
+}
+
+body {
+    margin: 0;
+}
+main {
+    padding-top: 4.5rem;
+    width: 100%;
+}

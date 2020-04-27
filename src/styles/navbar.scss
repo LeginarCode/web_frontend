@@ -1,0 +1,79 @@
+@import 'variables';
+
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .primary-nav {
+        display: flex;
+        padding: 0 18%;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $black;
+        color: $white;
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+        .navbar-brand {
+            font-size: 24px;
+        }
+
+        .nav-items {
+            display: flex;
+            padding: 0px;
+            text-align: center;
+            ul {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+
+                .navbar-item {
+                    padding: 5px 15px;
+                }
+
+                %navbar-btn {
+                    border-radius: 5px;
+                    border-style: solid;
+                    border-width: 2px;
+                    padding: 10px;
+                    margin: 0px 5px;
+                }
+
+                #sign-in {
+                    @extend %navbar-btn;
+                    border-color: $white;
+                    background-color: $black;
+                }
+
+                #sign-in:hover {
+                    background-color: #333;
+                }
+
+                #sign-up {
+                    @extend %navbar-btn;
+                    color: $black;
+                    background-color: $primary-color;
+                    border-style: none;
+                }
+
+                #sign-up:hover {
+                    background-color: $secondary-color;
+                }
+
+                #sign-out {
+                    @extend %navbar-btn;
+                    border-color: $white;
+                    background-color: $black;
+                }
+
+            }
+        }
+
+        .navbar-item {
+            font-size: 18px;
+        }
+    }
+}
