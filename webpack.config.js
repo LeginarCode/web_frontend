@@ -51,6 +51,7 @@ module.exports = {
     hotOnly: true,
     open: true,
     historyApiFallback:true,
+	stats: 'errors-only',
   },
   plugins: [new webpack.HotModuleReplacementPlugin()]
 };

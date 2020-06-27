@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="nav-wrapper">
             <nav className="navbar primary-nav">
 
-                <a href="#" className="navbar-brand">Leginar</a>
+                <Link to="/" className="navbar-brand">Leginar</Link>
 
                 <div className="nav-items">
                     <ul>
@@ -17,8 +17,8 @@ export default function Navbar() {
                     </ul>
 
                     <ul>
-                        <Link to="/"><li className="navbar-btn" id="sign-in">Sign In</li></Link>
-                        <Link to="/"><li className="navbar-btn" id="sign-up">Sign Up</li></Link>
+                        <Link to="/signin"><li className="navbar-btn" id="sign-in">Sign In</li></Link>
+                        <Link to="/signup"><li className="navbar-btn" id="sign-up">Sign Up</li></Link>
                     </ul>
                 </div>
             </nav>

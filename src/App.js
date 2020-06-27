@@ -6,6 +6,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import Home from './routes/Home';
+import SignUp from './routes/SignUp';
+import SignIn from './routes/SignIn';
 
 import './styles/main.scss';
 
@@ -22,6 +24,12 @@ class App extends Component {
                         <Route exact path="/services">
 
                         </Route>
+						<Route exact path="/signup">
+							<SignUp />
+						</Route>
+						<Route exact path="/signin">
+							<SignIn />
+						</Route>
                         <Route exact path="/">
                             <Home />
                         </Route>
