@@ -1,22 +1,24 @@
 language: node_js
 node_js:
-    - 10
+- 14.4.0
 
 git:
     depth: 1
 branches:
     only:
-        - master
+    - master
 
 
 # See npm ci documentation
-install npm ci
+install:
+- npm ci
 cache:
     directories:
-        - '$HOME/.npm'
+    - '$HOME/.npm'
 
 # Set CI to false so that warnings are not treated as errors
-script: CI=false npm run build
+script: 
+- CI=false npm run build
 
 deploy:
     provider: pages
