@@ -1,0 +1,40 @@
+@import 'variables';
+
+
+
+.search-widget-container {
+	padding: 10px;
+	width: 20%;
+	margin-right: auto;
+
+	.search-widget-flex {
+		display: flex;
+		height: 1.5rem;
+		padding: 0.25rem 0rem;
+
+		border-style: inset;
+		border-radius: 1rem;
+		border-color: #666;
+
+		background-color: $secondary-color;
+
+		.flex-item-wrapper {
+			margin: 0 .5rem;
+		}
+
+		.icon-wrapper {
+			flex: 0 0 auto;
+		}
+
+		.input-wrapper {
+			flex: 2 2 auto;
+			input {
+				margin: auto;
+				padding: auto 5px;
+				border-style: none;
+				background-color: inherit;
+				width: 100%;
+			}
+		}
+	}
+}

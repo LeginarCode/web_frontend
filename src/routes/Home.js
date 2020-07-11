@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import "../styles/home.scss";
+import '../styles/home.scss';
 
-import showcase_img from "../img/temp_showcase_new.png";
+import showcase_img from '../img/temp_showcase_new.png';
 
 export default class Home extends Component {
     render() {
@@ -20,7 +21,7 @@ export default class Home extends Component {
                                 malesuada ut velit. Cras tincidunt dictum leo,
                                 at porta purus venenatis ac.{" "}
                             </p>
-                            <a href="#">Sign Up</a>
+                            <Link to="/signup">Sign Up</Link>
                         </div>
                         <img src={showcase_img} alt="showcase image" />
                     </div>

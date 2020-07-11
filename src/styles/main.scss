@@ -8,15 +8,29 @@
 html {
     background-color: $white;
     font-family: $font-stack;
+
+	height: 100%;
 }
 
 body {
     margin: 0;
+	height: 100vh;
+}
+
+#root {
+	height: 100vh;
 }
 
 main {
+	display: flex;
+	flex-direction: column;
     padding-top: 4.5rem;
     width: 100%;
+	height: calc(100vh - 4.5rem);
+	
+	.content {
+		flex: 1 0 auto;
+	}
 }
 
 

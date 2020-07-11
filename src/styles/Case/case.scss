@@ -1,0 +1,78 @@
+@import '../variables';
+
+
+.case-wrapper {
+	height: 100%;
+	background-color: $primary-color;
+	padding: 2rem 20%;
+
+	.case-grid {
+		display: grid;
+		grid-template-rows: 2rem auto;
+		grid-auto-rows: minmax(100px, auto);
+		grid-gap: 1.5rem;
+	
+		.case-search-row {
+			grid-column: 1;
+			grid-row: 1
+		}
+	
+		.case-main-row {
+			grid-column: 1;
+			grid-row: 2;
+		}
+	}
+}
+
+
+// case-container is enclosed within case-main-row
+.case-container {
+	h1 {
+		font-size: 36px;
+		font-weight: bold;
+	}
+
+
+	// Setup grid layout
+	.case-dashboard {
+		display: grid;
+		grid-template-columns: 65% auto;
+		grid-template-rows: repeat(12, auto);
+		column-gap: 1rem;
+		row-gap: 1rem;
+
+		.grid-cell {
+			background-color: $black;
+			opacity: 0.8;
+		}
+
+		.graphic {
+			grid-column: 1;
+			grid-row: 1 / 4;
+
+			.case-img {
+				margin: 5% 5%;
+				width: 90%;
+			}
+		}
+
+		.invest {
+			grid-column: 2;
+			grid-row: 1 / 3;
+		}
+		
+		.info-pane {
+			grid-column: 1;
+			grid-row: 4 / 12;
+		}
+
+		.related {
+			grid-column: 2;
+			grid-row: 3 / 12;
+		}
+	}
+}
+
+	
+	
+	
