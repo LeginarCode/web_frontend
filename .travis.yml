@@ -20,6 +20,10 @@ cache:
 script: 
 - CI=false npm run build
 
+after-success:
+  mkdir dist
+  mv bundle.js dist/bundle.js
+
 deploy:
     provider: pages
     skip_cleanup: true
