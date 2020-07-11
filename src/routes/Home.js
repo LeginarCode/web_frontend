@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import '../styles/home.scss';
 
 import showcase_img from '../img/temp_showcase_new.png';
+console.log(showcase_img);
 
 export default class Home extends Component {
     render() {

@@ -1,9 +1,10 @@
-const path = require("path");
-const webpack = require("webpack");
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
   module: {
     rules: [
       {
@@ -40,18 +41,14 @@ module.exports = {
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
     path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
+	publicPath: '/dist/',
     filename: "bundle.js"
   },
-  devServer: {
-    contentBase: path.join(__dirname, "public/"),
-    port: 3000,
-    publicPath: "http://localhost:3000/dist/",
-    watchContentBase: true,
-    hotOnly: true,
-    open: true,
-    historyApiFallback:true,
-	stats: 'errors-only',
-  },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+	new webpack.HotModuleReplacementPlugin(),
+	 new CleanWebpackPlugin(),
+	new HtmlWebpackPlugin({
+		title: 'Production',
+	}),
+  ],
 };
