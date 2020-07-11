@@ -41,14 +41,14 @@ module.exports = {
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
     path: path.resolve(__dirname, "dist"),
-	publicPath: '/dist/',
     filename: "bundle.js"
   },
   plugins: [
 	new webpack.HotModuleReplacementPlugin(),
-	 new CleanWebpackPlugin(),
+	new CleanWebpackPlugin(),
 	new HtmlWebpackPlugin({
-		title: 'Production',
+		title: 'Leginar',
+		template: './public/index.html',
 	}),
   ],
 };
